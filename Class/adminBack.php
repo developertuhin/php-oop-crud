@@ -7,7 +7,7 @@
 			$dbhost = "localhost";
 			$dbuser = "root";
 			$dbpass = "";
-			$dbname = "php-ajax";
+			$dbname = "php-oop-crud";
 
 
 			$this->conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
@@ -16,9 +16,6 @@
 				die("DB connection Failed...!!!");
 			}
 		}
-
-
-
 		//------------Insert Data------
 		function save_data($data){
 			$name = $_POST['name'];
